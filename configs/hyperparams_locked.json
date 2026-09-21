@@ -1,0 +1,138 @@
+{
+  "pilot_lake": "BVR",
+  "selection_split": "val",
+  "metric": "val_joint_loss",
+  "limon": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 1.0,
+      "forecast": 1.0,
+      "moe_balance": 0.01
+    }
+  },
+  "misnet": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 1.0,
+      "forecast": 1.0,
+      "moe_balance": 0.01
+    }
+  },
+  "limon_lite": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 1.0,
+      "forecast": 1.0,
+      "moe_balance": 0.01
+    }
+  },
+  "lstm": {
+    "hidden": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "pars": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 1.0,
+      "forecast": 1.0,
+      "moe_balance": 0.0
+    }
+  },
+  "pars_forecast_only": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 0.0,
+      "forecast": 1.0,
+      "moe_balance": 0.0
+    }
+  },
+  "lake_forge": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 1.0,
+      "forecast": 1.0,
+      "moe_balance": 0.0
+    }
+  },
+  "lake_forge_forecast_only": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "d_model": 64,
+    "dropout": 0.1,
+    "loss_weights": {
+      "soft": 0.0,
+      "forecast": 1.0,
+      "moe_balance": 0.0
+    }
+  },
+  "mask_lstm": {
+    "hidden": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "batch_size": 32
+  },
+  "grud": {
+    "hidden": 64,
+    "lr": 0.001,
+    "dropout": 0.1,
+    "batch_size": 32
+  },
+  "tcn": {
+    "hidden": 64,
+    "lr": 0.001
+  },
+  "mtlstm": {
+    "hidden": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "informer": {
+    "d_model": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "n_heads": 4,
+    "factor": 5,
+    "batch_size": 32
+  },
+  "patchtst": {
+    "d_model": 64,
+    "lr": 0.001,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "n_heads": 4,
+    "patch_len": 16,
+    "stride": 8,
+    "batch_size": 32
+  },
+  "pls": {
+    "n_components": 10
+  },
+  "xgboost": {
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "n_estimators": 300
+  }
+}

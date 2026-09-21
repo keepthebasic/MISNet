@@ -1,0 +1,8 @@
+{
+  "experiment_seeds": [0, 1, 2, 3, 4],
+  "ablation_seeds": [0, 1, 2],
+  "tuning_seed": 42,
+  "numpy_seed_offset": 0,
+  "torch_deterministic": true,
+  "note": "Used by train.py / run_experiment.py for WR reproducibility (Table S8)."
+}
